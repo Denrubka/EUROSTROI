@@ -1,0 +1,43 @@
+.client-menu {
+  position: fixed;
+  top: 223px;
+  right: 0;
+  width: 53px;
+  padding: 0 8px;
+  height: 106px;
+  background: #3e69a0;
+  z-index: 99999999;
+  &__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  &__bottom {
+    position: relative;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &-like {
+      position: absolute;
+      top: 10px;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 18px;
+      height: 19px;
+      border-radius: 50%;
+      background: #f4b651;
+      font-family: "Open Sans";
+      font-size: 10px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #000000;
+    }
+  }
+}

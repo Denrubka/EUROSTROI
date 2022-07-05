@@ -1,0 +1,370 @@
+.footer {
+  background: url("../img/footer_bg.jpg") no-repeat;
+  background-size: cover;
+  padding-bottom: 67px;
+  @media (max-width: 1024px) {
+    padding-bottom: 53px;
+  }
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 67px;
+    margin-bottom: 22px;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    &__info {
+      @media (max-width: 991px) {
+        margin-bottom: 50px;
+      }
+    }
+    &__logo {
+      margin-bottom: 22px;
+      &-top {
+        margin-bottom: 9px;
+      }
+      &-span {
+        font-family: "Open Sans", sans-serif;
+        font-size: 38.5px;
+        line-height: 48px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-left: 5px;
+      }
+      &-text {
+        font-family: "Open Sans", sans-serif;
+        font-size: 11px;
+        line-height: 10px;
+        font-weight: 700;
+        color: #ffffff;
+        font-weight: 400;
+        max-width: 221px;
+        width: 100%;
+      }
+    }
+    &__adres {
+      position: relative;
+      max-width: 217px;
+      width: 100%;
+      margin-bottom: 24px;
+      padding-left: 17px;
+      &-text {
+        font-family: "PT Sans Caption", sans-serif;
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #ffffff;
+        margin-left: 12px;
+      }
+      &-img {
+        position: absolute;
+        top: 0;
+        left: 6px;
+      }
+      &-link {
+        font-family: "PT Sans Caption", sans-serif;
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #ffffff;
+        text-decoration: underline;
+      }
+    }
+    &__schedule {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      max-width: 154px;
+      width: 100%;
+      margin-bottom: 8px;
+      &-title {
+        font-family: "PT Sans Caption", sans-serif;
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-left: 28px;
+        margin-bottom: 5px;
+      }
+      &-text {
+        font-family: "PT Sans Caption", sans-serif;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #ffffff;
+        margin-left: 28px;
+        max-width: 127px;
+        padding: 5px 0;
+        border-top: 1px solid #858482;
+        border-bottom: 1px solid #858482;
+      }
+      &-img {
+        position: absolute;
+        top: 0;
+        left: 3px;
+      }
+    }
+    &__social {
+      margin-left: 28px;
+      margin-bottom: 24px;
+      &-link {
+        text-decoration: none;
+        &:not(:last-child) {
+          margin-right: 7px;
+        }
+      }
+    }
+    &__tells {
+      display: flex;
+      flex-direction: column;
+      margin-left: 2px;
+      margin-bottom: 22px;
+      & svg {
+        margin-right: 5px;
+      }
+    }
+    &__tell {
+      display: flex;
+      align-items: center;
+      font-family: "PT Sans Caption";
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 5px;
+      &-img {
+        margin-right: 8px;
+      }
+      &-img2 {
+        margin-right: 4px;
+      }
+    }
+    &__lists {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 991px) {
+        margin-bottom: 50px;
+      }
+      @media (max-width: 480px) {
+        display: none;
+      }
+    }
+    &__main {
+      max-width: 181px;
+      margin-right: 160px;
+      &-title {
+        font-family: "PT Sans Caption";
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 40px;
+      }
+      &-link {
+        font-family: "PT Sans Caption";
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        text-transform: none;
+        color: #ffffff;
+        transition: color 0.2s linear;
+        text-decoration: none;
+        &:hover {
+          color: #f4b651;
+        }
+      }
+      @media (max-width: 1200px) {
+        margin-right: 50px;
+      }
+    }
+    &__services {
+      max-width: 181px;
+      margin-right: 56px;
+      &-title {
+        font-family: "PT Sans Caption";
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 40px;
+      }
+      &-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0 56px;
+        max-height: 240px;
+        @media (max-width: 1024px) {
+          gap: 0;
+          flex-wrap: nowrap;
+          max-height: 100%;
+        }
+      }
+      &-link {
+        font-family: "PT Sans Caption";
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        text-transform: none;
+        color: #ffffff;
+        transition: color 0.2s linear;
+        text-decoration: none;
+        &:hover {
+          color: #f4b651;
+        }
+      }
+    }
+    &__empty {
+      max-width: 181px;
+      &-list {
+        margin-top: 63px;
+      }
+      &-link {
+        font-family: "PT Sans Caption";
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        text-transform: none;
+        color: #ffffff;
+        transition: color 0.2s linear;
+        text-decoration: none;
+        &:hover {
+          color: #f4b651;
+        }
+      }
+    }
+    &__cta {
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 991px) {
+        margin-bottom: 50px;
+      }
+      &-text {
+        font-family: "PT Sans Caption";
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #ffffff;
+        max-width: 203px;
+        margin-bottom: 50px;
+      }
+      &-subtext {
+        font-family: "PT Sans Caption";
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 9px;
+      }
+      &-payment {
+        width: 173px;
+        height: 102px;
+        background-color: #fff;
+      }
+    }
+  }
+  &-bottom {
+    position: relative;
+    display: flex;
+    padding-bottom: 67px;
+    align-items: flex-end;
+    @media (max-width: 1024px) {
+      padding-bottom: 120px;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      max-width: 250px;
+      width: 100%;
+    }
+    &__email {
+      display: flex;
+      align-items: center;
+      font-family: "PT Sans Caption";
+      font-size: 12px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #ffffff;
+      margin-bottom: 7px;
+      &-img {
+        margin-right: 6px;
+      }
+      &-link {
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 400;
+        margin-left: 6px;
+        color: #fff;
+      }
+    }
+    &__links {
+      margin-bottom: 23px;
+    }
+    &__link {
+      font-family: "PT Sans Caption";
+      font-size: 12px;
+      line-height: 1.2;
+      font-weight: 400;
+      text-decoration: underline;
+      color: #ffffff;
+      margin-right: 10px;
+    }
+    &__download {
+      font-family: "PT Sans Caption";
+      font-size: 13px;
+      line-height: 24px;
+      font-weight: 400;
+      text-decoration: underline;
+      text-transform: uppercase;
+      color: #f4b651;
+    }
+    &__copyright {
+      position: absolute;
+      left: 50%;
+      bottom: 10px;
+      width: 100%;
+      transform: translateX(-50%);
+      @media (max-width: 1024px) {
+        bottom: 45px;
+      }
+      &-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 14px;
+      }
+      &-item {
+        @media (max-width: 991px) {
+          text-align: center;
+        }
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+      }
+      &-link {
+        font-family: "PT Sans Caption";
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 400;
+        text-decoration: underline;
+        color: #ffffff;
+      }
+      &-span {
+        display: block;
+        font-family: "PT Sans Caption";
+        font-size: 11px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+      }
+    }
+  }
+}
